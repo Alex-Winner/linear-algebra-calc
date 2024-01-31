@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "mainmat.h": "c",
+        "stdio.h": "c",
+        "mymat.h": "c"
+    }
+}
