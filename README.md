@@ -4,37 +4,18 @@ This application allows you to perform various matrix operations.
 
 Available Commands:
 
-[stop]
-Syntax: stop
-Description: Exit the application.
 
-[read_mat]
-Syntax: read_mat <matrix_name>, <arg1>, <arg2>, ...
-Description: Read a matrix and store its values.
+| Command      | Syntax                                      | Description                                |
+|--------------|---------------------------------------------|--------------------------------------------|
+| `stop`       | `stop`                                      | Exit the application.                      |
+| `read_mat`   | `read_mat <matrix_name>, <arg1>, <arg2>, ...` | Read a matrix and store its values.       |
+| `print_mat`  | `print_mat <matrix_name>`                   | Print the contents of a matrix.            |
+| `add_mat`    | `add_mat <matrix1_name>, <matrix2_name>, <result_matrix_name>` | Add two matrices.          |
+| `sub_mat`    | `sub_mat <matrix1_name>, <matrix2_name>, <result_matrix_name>` | Subtract one matrix from another.   |
+| `mul_mat`    | `mul_mat <matrix1_name>, <matrix2_name>, <result_matrix_name>` | Multiply two matrices.       |
+| `mul_scalar` | `mul_scalar <matrix_name>, <scalar>, <result_matrix_name>` | Multiply a matrix by a scalar value. |
+| `trans_mat`  | `trans_mat <matrix_name>, <result_matrix_name>` | Transpose a matrix.                    |
 
-[print_mat]
-Syntax: print_mat <matrix_name>
-Description: Print the contents of a matrix.
-
-[add_mat]
-Syntax: add_mat <matrix1_name>, <matrix2_name>, <result_matrix_name>
-Description: Add two matrices.
-
-[sub_mat]
-Syntax: sub_mat <matrix1_name>, <matrix2_name>, <result_matrix_name>
-Description: Subtract one matrix from another.
-
-[mul_mat]
-Syntax: mul_mat <matrix1_name>, <matrix2_name>, <result_matrix_name>
-Description: Multiply two matrices.
-
-[mul_scalar]
-Syntax: mul_scalar <matrix_name>, <scalar>, <result_matrix_name>
-Description: Multiply a matrix by a scalar value.
-
-[trans_mat]
-Syntax: trans_mat <matrix_name>, <result_matrix_name>
-Description: Transpose a matrix.
 
 ## Operation
 ```
