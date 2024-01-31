@@ -1,0 +1,66 @@
+print_mat MAT_A
+print_mat MAT_B
+print_mat MAT_C
+
+read_mat MAT_A, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+print_mat MAT_A
+
+read_mat MAT_B, 4, 7, 2, 3, 0, 1, 0, 0, 2, 3, 4, 7, 0, 0, 0, 1
+print_mat MAT_B
+
+read_mat MAT_C, 0.3333, -1.8333, -0.1667, 0.1667, 0, 1, 0, 0, -0.1667, 0.1667, 0.3333, -1.8333, 0, 0, 0, 1
+print_mat MAT_C
+
+
+
+add_mat MAT_A, MAT_B, MAT_D
+print_mat MAT_D
+
+sub_mat MAT_B, MAT_A, MAT_D
+print_mat MAT_D
+
+sub_mat MAT_A, MAT_A, MAT_A
+print_mat MAT_A
+
+
+
+read_mat MAT_A, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+print_mat MAT_A
+
+mul_mat MAT_A, MAT_B, MAT_F
+print_mat MAT_A
+print_mat MAT_B
+print_mat MAT_F
+
+print_mat MAT_D
+mul_mat MAT_D, MAT_D, MAT_D
+print_mat MAT_D
+
+print_mat MAT_B
+print_mat MAT_C
+mul_mat MAT_C, MAT_B, MAT_E
+print_mat MAT_B
+print_mat MAT_C
+print_mat MAT_E
+
+
+
+
+mul_scalar MAT_A, 100, MAT_A
+print_mat MAT_A
+
+mul_scalar MAT_E, 10, MAT_E
+print_mat MAT_E
+
+mul_scalar MAT_B, -125, MAT_F
+print_mat MAT_F
+
+
+trans_mat MAT_F, MAT_F
+print_mat MAT_F
+
+trans_mat MAT_C, MAT_F
+print_mat MAT_C
+print_mat MAT_F
+
+stop

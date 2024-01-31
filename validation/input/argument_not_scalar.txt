@@ -1,0 +1,8 @@
+
+mul_scalar MAT_A,MAT_B ,MAT_C
+
+mul_scalar MAT_A,MAT_A,MAT_C
+
+mul_scalar MAT_A, 1MAT_B213 ,MAT_C
+
+mul_scalar MAT_A, 1.MAT_B,MAT_C

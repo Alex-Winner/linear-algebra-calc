@@ -1,0 +1,38 @@
+print_mat 
+
+read_mat MAT_A
+read_mat MAT_B,
+read_mat 
+
+add_mat 
+add_mat MAT_A,
+add_mat MAT_A
+add_mat MAT_A, MAT_A
+add_mat MAT_A, MAT_A,
+add_mat MAT_A, MAT_A
+ 
+sub_mat 
+sub_mat MAT_A,
+sub_mat MAT_A
+sub_mat MAT_A, MAT_A
+sub_mat MAT_A, MAT_A,
+sub_mat MAT_A, MAT_A 
+
+mul_mat 
+mul_mat MAT_A,
+mul_mat MAT_A
+mul_mat MAT_A, MAT_A
+mul_mat MAT_A, MAT_A,
+mul_mat MAT_A, MAT_A 
+
+mul_scalar 
+mul_scalar MAT_A,
+mul_scalar MAT_A
+mul_scalar MAT_A, 10
+mul_scalar MAT_A, 15,
+mul_scalar MAT_A, 80 
+
+trans_mat 
+trans_mat MAT_A,
+trans_mat MAT_A
+

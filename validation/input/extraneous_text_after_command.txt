@@ -1,0 +1,33 @@
+read_mat MAT_A,1,
+read_mat MAT_A, 1,  
+read_mat MAT_A, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 6, 6, 6, 6, 6,
+
+print_mat MAT_A,
+print_mat MAT_B dsad
+print_mat MAT_C 12
+
+add_mat MAT_A, MAT_B, MAT_D,
+add_mat MAT_A, MAT_B, MAT_D, MAT_A
+add_mat MAT_A, MAT_B, MAT_D, 15
+
+sub_mat MAT_A, MAT_B, MAT_D,
+sub_mat MAT_A, MAT_B, MAT_D, MAT_A
+sub_mat MAT_A, MAT_B, MAT_D, 15
+
+trans_mat MAT_C, MAT_C, 
+trans_mat MAT_C, MAT_C, MAT_A
+trans_mat MAT_C, MAT_C, 10
+
+mul_scalar MAT_A, 12.5, MAT_A,
+mul_scalar MAT_A, 12.5, MAT_A, MAT_A
+mul_scalar MAT_A, 12.5, MAT_A, 10
+
+mul_mat MAT_A, MAT_C, MAT_A, 
+mul_mat MAT_A, MAT_D, MAT_D, MAT_A 
+mul_mat MAT_A,MAT_A,MAT_A, 10
+
+
+stop now
+stop 12
+stop MAT_A
+

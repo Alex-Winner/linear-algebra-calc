@@ -1,0 +1,60 @@
+Welcome to Matrix Calculator Application
+=======================================
+
+This application allows you to perform various matrix operations.
+
+Below are the available matrix Names:
+1: MAT_A	2: MAT_B	3: MAT_C	4: MAT_D	5: MAT_E	6: MAT_F	
+
+Available Commands:
+-------------------
+
+[stop]
+Syntax: stop
+Description: Exit the application.
+
+[read_mat]
+Syntax: read_mat <matrix_name>, <arg1>, <arg2>, ...
+Description: Read a matrix and store its values.
+
+[print_mat]
+Syntax: print_mat <matrix_name>
+Description: Print the contents of a matrix.
+
+[add_mat]
+Syntax: add_mat <matrix1_name>, <matrix2_name>, <result_matrix_name>
+Description: Add two matrices.
+
+[sub_mat]
+Syntax: sub_mat <matrix1_name>, <matrix2_name>, <result_matrix_name>
+Description: Subtract one matrix from another.
+
+[mul_mat]
+Syntax: mul_mat <matrix1_name>, <matrix2_name>, <result_matrix_name>
+Description: Multiply two matrices.
+
+[mul_scalar]
+Syntax: mul_scalar <matrix_name>, <scalar>, <result_matrix_name>
+Description: Multiply a matrix by a scalar value.
+
+[trans_mat]
+Syntax: trans_mat <matrix_name>, <result_matrix_name>
+Description: Transpose a matrix.
+
+=======================================
+Please enter your instructions:
+>> read_mat MAT_A, 3.2, 8, 1abc
+Error: Argument is not a real number
+>> read_mat MAT_A, 3.2, a, -1abc, 5, 6, 7
+Error: Argument is not a real number
+>> read_mat MAT_A, -pi,a,1abc
+Error: Argument is not a real number
+>> read_mat MAT_C, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16b
+Error: Argument is not a real number
+>> 
+>> stop
+
+Thank you for using the Matrix Calculator Application!
+If you have any feedback or suggestions, please let us know.
+Goodbye and have a great day!
+

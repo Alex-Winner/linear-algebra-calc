@@ -1,0 +1,95 @@
+Welcome to Matrix Calculator Application
+=======================================
+
+This application allows you to perform various matrix operations.
+
+Below are the available matrix Names:
+1: MAT_A	2: MAT_B	3: MAT_C	4: MAT_D	5: MAT_E	6: MAT_F	
+
+Available Commands:
+-------------------
+
+[stop]
+Syntax: stop
+Description: Exit the application.
+
+[read_mat]
+Syntax: read_mat <matrix_name>, <arg1>, <arg2>, ...
+Description: Read a matrix and store its values.
+
+[print_mat]
+Syntax: print_mat <matrix_name>
+Description: Print the contents of a matrix.
+
+[add_mat]
+Syntax: add_mat <matrix1_name>, <matrix2_name>, <result_matrix_name>
+Description: Add two matrices.
+
+[sub_mat]
+Syntax: sub_mat <matrix1_name>, <matrix2_name>, <result_matrix_name>
+Description: Subtract one matrix from another.
+
+[mul_mat]
+Syntax: mul_mat <matrix1_name>, <matrix2_name>, <result_matrix_name>
+Description: Multiply two matrices.
+
+[mul_scalar]
+Syntax: mul_scalar <matrix_name>, <scalar>, <result_matrix_name>
+Description: Multiply a matrix by a scalar value.
+
+[trans_mat]
+Syntax: trans_mat <matrix_name>, <result_matrix_name>
+Description: Transpose a matrix.
+
+=======================================
+Please enter your instructions:
+>> read_mat MAT_G, 3.2, 8
+Error: Undefined matrix name
+>> read_mat mat_a, 3.2, -5.3
+Error: Undefined matrix name
+>> do_it MAT_A, MAT_B, MAT_C
+Error: Undefined command name
+>> Add_mat MAT_A, MAT_B, MAT_C
+Error: Undefined command name
+>> read_mat MAT_A, abc, 576
+Error: Argument is not a real number
+>> read_mat MAT_A, 1abc, 576
+Error: Argument is not a real number
+>> read_mat MAT_A, a1, 576 
+Error: Argument is not a real number
+>> read_mat MAT_A, ,abc, 576
+Error: Multiple consecutive commas
+>> read_mat MAT_A, 3, -4.2, 6,
+Error: Extraneous text after end of command
+>> read_mat MAT_A
+Error: Missing argument
+>> mul_mat MAT_B, MAT_C
+Error: Missing argument
+>> trans_mat MAT_B, MAT_C, MAT_D
+Error: Extraneous text after end of command
+>> trans_mat MAT_B, MAT_C, MAT_D,  
+Error: Extraneous text after end of command
+>> print_mat, MAT_A
+Error: Illegal comma
+>> read_mat MAT_A,
+Error: Missing argument
+>> print_mat , MAT_A
+Error: Illegal comma
+>> print_mat ,MAT_A
+Error: Illegal comma
+>> trans_mat MAT_A MAT_B
+Error: Missing comma
+>> read_mat    MAT_B
+Error: Missing argument
+>> sub_mat MAT_A, , MAT_B, MAT_C
+Error: Multiple consecutive commas
+>> mul_scalar MAT_A, MAT_B, MAT_C
+Error: Argument is not a scalar
+>> stop now
+Error: Extraneous text after end of command
+>> stop, 
+Error: Illegal comma
+>> 
+>> 
+>> 
+Error: Unexpected End Of File. No 'stop' command found.

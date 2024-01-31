@@ -1,0 +1,137 @@
+Welcome to Matrix Calculator Application
+=======================================
+
+This application allows you to perform various matrix operations.
+
+Below are the available matrix Names:
+1: MAT_A	2: MAT_B	3: MAT_C	4: MAT_D	5: MAT_E	6: MAT_F	
+
+Available Commands:
+-------------------
+
+[stop]
+Syntax: stop
+Description: Exit the application.
+
+[read_mat]
+Syntax: read_mat <matrix_name>, <arg1>, <arg2>, ...
+Description: Read a matrix and store its values.
+
+[print_mat]
+Syntax: print_mat <matrix_name>
+Description: Print the contents of a matrix.
+
+[add_mat]
+Syntax: add_mat <matrix1_name>, <matrix2_name>, <result_matrix_name>
+Description: Add two matrices.
+
+[sub_mat]
+Syntax: sub_mat <matrix1_name>, <matrix2_name>, <result_matrix_name>
+Description: Subtract one matrix from another.
+
+[mul_mat]
+Syntax: mul_mat <matrix1_name>, <matrix2_name>, <result_matrix_name>
+Description: Multiply two matrices.
+
+[mul_scalar]
+Syntax: mul_scalar <matrix_name>, <scalar>, <result_matrix_name>
+Description: Multiply a matrix by a scalar value.
+
+[trans_mat]
+Syntax: trans_mat <matrix_name>, <result_matrix_name>
+Description: Transpose a matrix.
+
+=======================================
+Please enter your instructions:
+>> read_mat MAT_A, 16, 0, 0, 0, 0, 8, 0, 0, 0, 0, 4, 0, 0, 0, 0, 1
+>> print_mat MAT_A
+   16.00     0.00     0.00     0.00 
+    0.00     8.00     0.00     0.00 
+    0.00     0.00     4.00     0.00 
+    0.00     0.00     0.00     1.00 
+>> 
+>> read_mat MAT_B, 0.0625, 0, 0, 0, 0, 0.125, 0, 0, 0, 0, 0.25, 0, 0, 0, 0, 1
+>> print_mat MAT_B
+    0.06     0.00     0.00     0.00 
+    0.00     0.12     0.00     0.00 
+    0.00     0.00     0.25     0.00 
+    0.00     0.00     0.00     1.00 
+>> 
+>> read_mat MAT_C, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
+>> print_mat MAT_C 
+    1.00     2.00     3.00     4.00 
+    5.00     6.00     7.00     8.00 
+    9.00    10.00    11.00    12.00 
+   13.00    14.00    15.00    16.00 
+>> 
+>> mul_mat MAT_A, MAT_B, MAT_D
+>> print_mat MAT_A
+   16.00     0.00     0.00     0.00 
+    0.00     8.00     0.00     0.00 
+    0.00     0.00     4.00     0.00 
+    0.00     0.00     0.00     1.00 
+>> print_mat MAT_B
+    0.06     0.00     0.00     0.00 
+    0.00     0.12     0.00     0.00 
+    0.00     0.00     0.25     0.00 
+    0.00     0.00     0.00     1.00 
+>> print_mat MAT_D
+    1.00     0.00     0.00     0.00 
+    0.00     1.00     0.00     0.00 
+    0.00     0.00     1.00     0.00 
+    0.00     0.00     0.00     1.00 
+>> 
+>> mul_mat MAT_A, MAT_C, MAT_E
+>> print_mat MAT_A
+   16.00     0.00     0.00     0.00 
+    0.00     8.00     0.00     0.00 
+    0.00     0.00     4.00     0.00 
+    0.00     0.00     0.00     1.00 
+>> print_mat MAT_C
+    1.00     2.00     3.00     4.00 
+    5.00     6.00     7.00     8.00 
+    9.00    10.00    11.00    12.00 
+   13.00    14.00    15.00    16.00 
+>> print_mat MAT_E
+   16.00    32.00    48.00    64.00 
+   40.00    48.00    56.00    64.00 
+   36.00    40.00    44.00    48.00 
+   13.00    14.00    15.00    16.00 
+>> 
+>> mul_mat MAT_A, MAT_C, MAT_C
+>> print_mat MAT_A
+   16.00     0.00     0.00     0.00 
+    0.00     8.00     0.00     0.00 
+    0.00     0.00     4.00     0.00 
+    0.00     0.00     0.00     1.00 
+>> print_mat MAT_C
+   16.00    16.00    12.00     4.00 
+   80.00    48.00    28.00     8.00 
+  144.00    80.00    44.00    12.00 
+  208.00   112.00    60.00    16.00 
+>> 
+>> mul_mat MAT_C, MAT_B, MAT_C
+>> print_mat MAT_B
+    0.06     0.00     0.00     0.00 
+    0.00     0.12     0.00     0.00 
+    0.00     0.00     0.25     0.00 
+    0.00     0.00     0.00     1.00 
+>> print_mat MAT_C
+    1.00     2.00     3.00     4.00 
+    5.00     6.00     7.00     8.00 
+    9.00    10.00    11.00    12.00 
+   13.00    14.00    15.00    16.00 
+>> 
+>> mul_mat MAT_A, MAT_A, MAT_A
+>> print_mat MAT_A
+  256.00     0.00     0.00     0.00 
+    0.00    64.00     0.00     0.00 
+    0.00     0.00    16.00     0.00 
+    0.00     0.00     0.00     1.00 
+>> 
+>> stop
+
+Thank you for using the Matrix Calculator Application!
+If you have any feedback or suggestions, please let us know.
+Goodbye and have a great day!
+

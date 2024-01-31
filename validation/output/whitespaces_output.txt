@@ -1,0 +1,150 @@
+Welcome to Matrix Calculator Application
+=======================================
+
+This application allows you to perform various matrix operations.
+
+Below are the available matrix Names:
+1: MAT_A	2: MAT_B	3: MAT_C	4: MAT_D	5: MAT_E	6: MAT_F	
+
+Available Commands:
+-------------------
+
+[stop]
+Syntax: stop
+Description: Exit the application.
+
+[read_mat]
+Syntax: read_mat <matrix_name>, <arg1>, <arg2>, ...
+Description: Read a matrix and store its values.
+
+[print_mat]
+Syntax: print_mat <matrix_name>
+Description: Print the contents of a matrix.
+
+[add_mat]
+Syntax: add_mat <matrix1_name>, <matrix2_name>, <result_matrix_name>
+Description: Add two matrices.
+
+[sub_mat]
+Syntax: sub_mat <matrix1_name>, <matrix2_name>, <result_matrix_name>
+Description: Subtract one matrix from another.
+
+[mul_mat]
+Syntax: mul_mat <matrix1_name>, <matrix2_name>, <result_matrix_name>
+Description: Multiply two matrices.
+
+[mul_scalar]
+Syntax: mul_scalar <matrix_name>, <scalar>, <result_matrix_name>
+Description: Multiply a matrix by a scalar value.
+
+[trans_mat]
+Syntax: trans_mat <matrix_name>, <result_matrix_name>
+Description: Transpose a matrix.
+
+=======================================
+Please enter your instructions:
+>> 
+>>     print_mat MAT_A
+    0.00     0.00     0.00     0.00 
+    0.00     0.00     0.00     0.00 
+    0.00     0.00     0.00     0.00 
+    0.00     0.00     0.00     0.00 
+>>  print_mat MAT_A
+    0.00     0.00     0.00     0.00 
+    0.00     0.00     0.00     0.00 
+    0.00     0.00     0.00     0.00 
+    0.00     0.00     0.00     0.00 
+>> 
+>> print_mat MAT_A
+    0.00     0.00     0.00     0.00 
+    0.00     0.00     0.00     0.00 
+    0.00     0.00     0.00     0.00 
+    0.00     0.00     0.00     0.00 
+>> print_mat   MAT_B
+    0.00     0.00     0.00     0.00 
+    0.00     0.00     0.00     0.00 
+    0.00     0.00     0.00     0.00 
+    0.00     0.00     0.00     0.00 
+>> print_mat       MAT_C       
+    0.00     0.00     0.00     0.00 
+    0.00     0.00     0.00     0.00 
+    0.00     0.00     0.00     0.00 
+    0.00     0.00     0.00     0.00 
+>> 
+>> 
+>> read_mat MAT_A   ,  1,  2   , 3 ,       4 , 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 6, 6, 6, 6, 6
+>> read_mat MAT_B      , 1, 2.3456, -7.89        
+>> read_mat        MAT_C   ,   1, 2,     3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
+>> 
+>> print_mat MAT_A
+    1.00     2.00     3.00     4.00 
+    5.00     6.00     7.00     8.00 
+    9.00     1.00     2.00     3.00 
+    4.00     5.00     6.00     6.00 
+>> print_mat MAT_B
+    1.00     2.35    -7.89     0.00 
+    0.00     0.00     0.00     0.00 
+    0.00     0.00     0.00     0.00 
+    0.00     0.00     0.00     0.00 
+>> print_mat MAT_C 
+    1.00     2.00     3.00     4.00 
+    5.00     6.00     7.00     8.00 
+    9.00    10.00    11.00    12.00 
+   13.00    14.00    15.00    16.00 
+>> 
+>> add_mat     MAT_A   , MAT_B    ,    MAT_D
+>> print_mat       MAT_D
+    2.00     4.35    -4.89     4.00 
+    5.00     6.00     7.00     8.00 
+    9.00     1.00     2.00     3.00 
+    4.00     5.00     6.00     6.00 
+>>     sub_mat         MAT_B   , MAT_A  , MAT_E  
+>>     print_mat    MAT_E 
+    0.00     0.35   -10.89    -4.00 
+   -5.00    -6.00    -7.00    -8.00 
+   -9.00    -1.00    -2.00    -3.00 
+   -4.00    -5.00    -6.00    -6.00 
+>> mul_mat MAT_B, MAT_C, MAT_F
+>> 
+>> mul_mat MAT_A,  MAT_C ,MAT_A
+>> mul_mat MAT_A, MAT_D  ,       MAT_D 
+>> 
+>>     print_mat MAT_F
+  -58.28   -62.83   -67.37   -71.92 
+    0.00     0.00     0.00     0.00 
+    0.00     0.00     0.00     0.00 
+    0.00     0.00     0.00     0.00 
+>>     mul_scalar MAT_A, 12.5, MAT_A
+>>     print_mat MAT_A
+ 1125.00  1250.00  1375.00  1500.00 
+ 2525.00  2850.00  3175.00  3500.00 
+  887.50  1075.00  1262.50  1450.00 
+ 2012.50  2275.00  2537.50  2800.00 
+>> 
+>> trans_mat       MAT_C ,     MAT_C
+>> print_mat    MAT_C
+    1.00     5.00     9.00    13.00 
+    2.00     6.00    10.00    14.00 
+    3.00     7.00    11.00    15.00 
+    4.00     8.00    12.00    16.00 
+>> 
+>> mul_mat MAT_A,  MAT_A   ,   MAT_A
+>> print_mat MAT_A
+8660937.50 9859375.00 11057812.50 12256250.00 
+19898437.50 22654375.00 25410312.50 28166250.00 
+7751406.25 8829062.50 9906718.75 10984375.00 
+15895468.75 18097187.50 20298906.25 22500625.00 
+>> 
+>> mul_mat MAT_A,  MAT_A   ,   MAT_A
+>> print_mat MAT_A
+551730431396484.38 628183181152343.75 704635930908203.12 781088680664062.50 
+1267807190380859.50 1443486008496093.75 1619164826611328.00 1794843644726562.50 
+494211784594726.56 562694246728515.62 631176708862304.75 699659170996093.75 
+1012778466088867.25 1153118200732422.00 1293457935375976.50 1433797670019531.25 
+>> 
+>>             stop
+
+Thank you for using the Matrix Calculator Application!
+If you have any feedback or suggestions, please let us know.
+Goodbye and have a great day!
+

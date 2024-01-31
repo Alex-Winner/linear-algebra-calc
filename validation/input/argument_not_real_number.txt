@@ -1,0 +1,6 @@
+read_mat MAT_A, 3.2, 8, 1abc
+read_mat MAT_A, 3.2, a, -1abc, 5, 6, 7
+read_mat MAT_A, -pi,a,1abc
+read_mat MAT_C, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16b
+
+stop
